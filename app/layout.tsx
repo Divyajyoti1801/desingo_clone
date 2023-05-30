@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import { Jost } from "next/font/google";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 import Navigator from "./components/Navigator";
 import "./globals.css";
 
@@ -18,9 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jost.className}>
+      <body
+        className={clsx(
+          `${jost.className} bg-[url('/images/shared/desktop/bg-pattern-leaf.svg')] bg-no-repeat bg-left bg-auto`
+        )}
+      >
         <Navigator />
         <Container>{children}</Container>
+        <Footer />
       </body>
     </html>
   );

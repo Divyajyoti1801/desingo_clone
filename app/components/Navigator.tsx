@@ -14,7 +14,7 @@ const Navigator = () => {
   }, []);
 
   return (
-    <div className="relative lg:px-[10.25rem] px-[2.375rem] bg-white flex flex-row justify-between py-[64px] gap-4">
+    <div className="relative lg:px-[10.25rem] px-[2.375rem] flex flex-row justify-between py-[64px] gap-4">
       <div className="flex justify-center items-center">
         <Image
           src="/images/shared/desktop/logo-dark.png"
@@ -23,7 +23,7 @@ const Navigator = () => {
           alt="Designo Logo"
         />
       </div>
-      <div className="hidden sm:flex flex-row gap-[2.625rem] justify-center items-center">
+      <div className="hidden md:flex flex-row gap-[2.625rem] justify-center items-center">
         <Link
           href="/about"
           className="text-bodyText text-customBlack tracking-headerSpacing1 border-b-[1px] border-transparent hover:border-customBlack transition"
@@ -43,7 +43,7 @@ const Navigator = () => {
           CONTACT
         </Link>
       </div>
-      <div className="sm:hidden h-full flex flex-row justify-center items-center">
+      <div className="md:hidden h-full flex flex-row justify-center items-center">
         {isOpen ? (
           <AiOutlineClose
             size={28}
