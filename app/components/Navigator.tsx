@@ -1,9 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 const Navigator = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   const menuOpen = useCallback(() => {
@@ -15,7 +18,10 @@ const Navigator = () => {
 
   return (
     <div className="relative lg:px-[10.25rem] px-[2.375rem] flex flex-row justify-between py-[64px] gap-4">
-      <div className="flex justify-center items-center">
+      <div
+        className="flex justify-center items-center cursor-pointer"
+        onClick={() => router.push("/")}
+      >
         <Image
           src="/images/shared/desktop/logo-dark.png"
           width={195}

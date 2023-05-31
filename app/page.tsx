@@ -8,8 +8,8 @@ import Floater from "./components/Floater";
 const Home = () => {
   const router = useRouter();
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-[160px] mb-10">
-      <div className="w-full px-[23px] pt-[60px] bg-customPeach flex flex-col justify-center items-center rounded-lg bg-[url('/images/home/desktop/bg-pattern-hero-home.svg')] bg-no-repeat bg-contain overflow-hidden bg-right xl:flex-row  xl:px-[90px] xl:py-[60px]">
+    <div className="w-full flex flex-col justify-center items-center gap-[160px] mb-20">
+      <div className="w-full px-[23px] pt-[60px] bg-customPeach flex flex-col justify-center items-center md:rounded-lg bg-[url('/images/home/desktop/bg-pattern-hero-home.svg')] bg-no-repeat bg-contain overflow-hidden bg-right xl:flex-row  xl:px-[90px] xl:py-[60px]">
         <div className="w-full flex flex-col justify-center items-center xl:items-start gap-[30px]">
           <h1 className="text-center w-full font-medium text-subHeading text-white leading-tight xl:text-left">
             Award-winning custom designs and digital branding solutions
@@ -32,8 +32,11 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="w-full grid grid-rows-3 lg:grid-rows-2 lg:grid-cols-2 gap-[28px]">
-        <div className="w-full h-[250px] gap-[24px] bg-[url('/images/home/mobile/image-web-design.jpg')] sm:bg-[url('/images/home/tablet/image-web-design.jpg')] md:bg-[url('/images/home/desktop/image-web-design-large.jpg')] bg-no-repeat bg-cover bg-center rounded-lg lg:row-span-full lg:h-full">
+      <div className="w-full grid grid-rows-3 lg:grid-rows-2 lg:grid-cols-2 gap-[28px] px-[2.375rem] md:px-0">
+        <div
+          className="w-full h-[250px] gap-[24px] bg-[url('/images/home/mobile/image-web-design.jpg')] sm:bg-[url('/images/home/tablet/image-web-design.jpg')] md:bg-[url('/images/home/desktop/image-web-design-large.jpg')] bg-no-repeat bg-cover bg-center rounded-lg lg:row-span-full lg:h-full"
+          onClick={() => router.push("/web-design")}
+        >
           <div className="flex flex-col w-full h-full justify-center items-center rounded-lg cursor-pointer hover:bg-customLightPeach/40 transition">
             <h1 className="text-subHeading text-white font-medium tracking-headerSpacing1 text-center">
               WEB DESIGN
@@ -44,7 +47,10 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-[250px] gap-[24px] bg-[url('/images/home/mobile/image-app-design.jpg')] sm:bg-[url('/images/home/tablet/image-app-design.jpg')] md:bg-[url('/images/home/desktop/image-app-design.jpg')] bg-no-repeat bg-cover bg-center rounded-lg transition">
+        <div
+          className="w-full h-[250px] gap-[24px] bg-[url('/images/home/mobile/image-app-design.jpg')] sm:bg-[url('/images/home/tablet/image-app-design.jpg')] md:bg-[url('/images/home/desktop/image-app-design.jpg')] bg-no-repeat bg-cover bg-center rounded-lg transition"
+          onClick={() => router.push("/app-design")}
+        >
           <div className="flex flex-col w-full h-full justify-center items-center rounded-lg cursor-pointer hover:bg-customLightPeach/40">
             <h1 className="text-subHeading text-white font-medium tracking-headerSpacing1 text-center">
               APP DESIGN
@@ -55,7 +61,10 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-[250px] gap-[24px] bg-[url('/images/home/mobile/image-graphic-design.jpg')] sm:bg-[url('/images/home/tablet/image-graphic-design.jpg')] md:bg-[url('/images/home/desktop/image-graphic-design.jpg')] bg-no-repeat bg-cover bg-center rounded-lg transition">
+        <div
+          className="w-full h-[250px] gap-[24px] bg-[url('/images/home/mobile/image-graphic-design.jpg')] sm:bg-[url('/images/home/tablet/image-graphic-design.jpg')] md:bg-[url('/images/home/desktop/image-graphic-design.jpg')] bg-no-repeat bg-cover bg-center rounded-lg transition"
+          onClick={() => router.push("/graphic-design")}
+        >
           <div className="flex flex-col w-full h-full justify-center items-center rounded-lg cursor-pointer hover:bg-customLightPeach/40">
             <h1 className="text-subHeading text-white font-medium tracking-headerSpacing1 text-center">
               GRAPHIC DESIGN
@@ -67,7 +76,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 ">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-[2.375rem] md:px-0">
         <div className="flex flex-col md:flex-row lg:flex-col items-center justify-center gap-5">
           <div className="flex items-center justify-center bg-[url('/images/shared/desktop/bg-pattern-small-circle.svg')] bg-cover bg-center">
             <Image
@@ -130,7 +139,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Floater />
+      <div>
+        <Floater
+          title="Let's talk about your project"
+          content="Ready to take it to next level? Contact us today and find out how our expertise can help your business grow."
+          cta={true}
+          ctaText="Get in touch"
+        />
+      </div>
     </div>
   );
 };

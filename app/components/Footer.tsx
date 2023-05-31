@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillFacebook } from "react-icons/ai";
 import { BsInstagram, BsPinterest, BsTwitter, BsYoutube } from "react-icons/bs";
+
 const Footer = () => {
   return (
     <div className="flex flex-col lg:px-[10.25rem] px-[2.375rem] bg-customBlack py-[60px] gap-[40px]">

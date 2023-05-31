@@ -3,7 +3,9 @@ interface ContainerProp {
 }
 
 const Container: React.FC<ContainerProp> = ({ children }) => {
-  return <div className="md:px-[10.25rem] px-[2.375rem]">{children}</div>;
+  return (
+    <div className="px-0 lg:px-[10.25rem] md:px-[2.375rem]">{children}</div>
+  );
 };
 
 export default Container;

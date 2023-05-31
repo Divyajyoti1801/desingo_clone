@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          `${jost.className} bg-[url('/images/shared/desktop/bg-pattern-leaf.svg')] bg-no-repeat bg-left bg-auto`
+          `${jost.className} bg-[url('/images/shared/desktop/bg-pattern-leaf.svg')] bg-no-repeat bg-left bg-contain lg:bg-auto `
         )}
       >
         <Navigator />
