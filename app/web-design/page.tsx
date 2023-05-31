@@ -13,7 +13,7 @@ const WebDesign = () => {
         content="We build website that server as a powerful marketing tools and bring memorable brand experiences."
         cta={false}
       />
-      <div className="flex flex-col gap-8 mx-[2.375rem] lg:mx-0">
+      <div className="flex flex-col lg:grid  lg:grid-cols-3 gap-8 mx-[2.375rem] lg:mx-0">
         <ShowCard
           title="Express"
           content="A multi-carrier shipping website for ecommerce business"
