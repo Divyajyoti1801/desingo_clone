@@ -5,9 +5,9 @@ import Floater from "../components/Floater";
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-[160px] mb-10">
-      <div className="w-full lg:h-[30rem] flex flex-col-reverse items-center justify-center lg:flex-row mx-[2.375rem] md:mx-0 md:rounded-2xl overflow-hidden">
-        <div className="flex flex-col gap-8 items-center justify-center lg:pl-[95px] p-[60px] lg:pr-5 bg-customPeach lg:h-full md:h-[50%] h-auto w-full lg:w-[60%] bg-[url('/images/about/mobile/bg-pattern-hero-about-mobile.svg')] sm:bg-[url('/images/about/desktop/bg-pattern-hero-about-desktop.svg')] bg-no-repeat bg-cover bg-top-right">
-          <h1 className="text-white text-subHeading font-medium w-full text-center lg:text-left">
+      <div className="w-full lg:h-[30rem] flex flex-col-reverse items-center justify-center lg:flex-row mx-[2.375rem] md:mx-0 md:rounded-2xl overflow-hidden bg-customPeach bg-none lg:bg-[url('/images/about/desktop/bg-pattern-hero-about-desktop.svg')] bg-no-repeat bg-contain bg-left">
+        <div className="flex flex-col gap-8 items-center justify-center lg:pl-[95px] p-[60px] lg:pr-5 lg:h-full md:h-[50%] h-auto w-full lg:w-[60%] bg-[url('/images/about/mobile/bg-pattern-hero-about-mobile.svg')] bg-no-repeat bg-auto bg-left lg:bg-none">
+          <h1 className="text-white text-subHeading font-medium w-full text-center lg:text-left ">
             About Us
           </h1>
           <p className="w-full text-white text-bodyText text-center lg:text-left">
