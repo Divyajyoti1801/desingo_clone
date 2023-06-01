@@ -64,7 +64,7 @@ const Navigator = () => {
           />
         )}
         {isOpen && (
-          <div className="absolute w-full top-full left-0 flex flex-col  justify-start items-start bg-customBlack gap-[2.4rem] px-[2.4rem] py-[4.8rem]">
+          <div className="absolute w-full top-full left-0 flex flex-col  justify-start items-start bg-customBlack gap-[2.4rem] px-[2.4rem] py-[4.8rem] z-100">
             <Link
               href="/about"
               className="text-lightHeading text-white tracking-headerSpacing1 border-b-[1px] border-transparent hover:border-customBlack transition"
