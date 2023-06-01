@@ -19,7 +19,10 @@ const Home = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="bg-white hover:bg-white/50 cursor-pointer p-4 rounded-lg font-bold hover:text-white transition shadow-md">
+          <button
+            className="bg-white hover:bg-white/50 cursor-pointer p-4 rounded-lg font-bold hover:text-white transition shadow-md"
+            onClick={() => router.push("/about")}
+          >
             LEARN MORE
           </button>
         </div>
