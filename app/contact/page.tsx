@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { FieldValues, useForm } from "react-hook-form";
 import Input from "../components/Input";
 const Contact = () => {
   const {
@@ -12,7 +12,7 @@ const Contact = () => {
   });
   return (
     <div className="flex flex-col items-center justify-center gap-[160px] mb-10">
-      <div className="w-full flex flex-col lg:flex-row items-center justify-center bg-customPeach gap-5 md:rounded-2xl py-[3.875rem] px-[1.625rem] lg:py-[4.5rem] lg:px-[3.25rem] bg-[url('/images/contact/mobile/bg-pattern-hero-contact-mobile.svg')] lg:bg-[url('/images/contact/desktop/bg-pattern-hero-desktop.svg')] bg-no-repeat bg-auto bg-left">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center bg-customPeach gap-5 md:rounded-2xl py-[3.875rem] px-[1.625rem] lg:py-[4.5rem] lg:px-[3.25rem] bg-[url('/images/contact/mobile/bg-pattern-hero-contact-mobile.svg')] lg:bg-[url('/images/contact/desktop/bg-pattern-hero-desktop.svg')] bg-no-repeat bg-contain bg-left">
         <div className="w-full h-[40%] lg:h-full flex flex-col items-center justify-between lg:w-[50%]">
           <h1 className="text-subHeading text-white w-full text-center md:text-left">
             Contact Us

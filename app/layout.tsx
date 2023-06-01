@@ -20,11 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={clsx(
-          `${jost.className} bg-[url('/images/shared/desktop/bg-pattern-leaf.svg')] bg-no-repeat bg-left bg-contain lg:bg-auto `
-        )}
-      >
+      <body className={clsx(`${jost.className}`)}>
         <Navigator />
         <Container>{children}</Container>
         <Footer />

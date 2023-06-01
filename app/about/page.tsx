@@ -22,7 +22,7 @@ const About = () => {
       </div>
       <div className="w-full lg:h-[30rem] flex flex-col items-center justify-center lg:flex-row mx-[2.375rem] md:mx-0 md:rounded-2xl overflow-hidden">
         <div className="w-full h-[20rem] lg:h-full lg:w-[40%] bg-[url('/images/about/mobile/image-world-class-talent.jpg')] md:bg-[url('/images/about/tablet/image-world-class-talent.jpg')] lg:bg-[url('/images/about/desktop/image-world-class-talent.jpg')] bg-no-repeat bg-cover" />
-        <div className="flex flex-col gap-8 items-center justify-center lg:pr-[95px] p-[60px] lg:pl-8 bg-customLightPeach/30 lg:h-full md:h-[50%] h-auto w-full lg:w-[60%] bg-[url('/images/about/mobile/bg-pattern-hero-about-mobile.svg')] sm:bg-[url('/images/about/desktop/bg-pattern-hero-about-desktop.svg')] bg-no-repeat bg-cover bg-right">
+        <div className="flex flex-col gap-8 items-center justify-center lg:pr-[95px] p-[60px] lg:pl-8 bg-customLightPeach/30 lg:h-full md:h-[50%] h-auto w-full lg:w-[60%] bg-[url('/images/about/mobile/bg-pattern-hero-about-mobile.svg')] sm:bg-[url('/images/about/desktop/bg-pattern-hero-about-desktop.svg')] bg-no-repeat bg-contain bg-right">
           <h1 className="text-customPeach text-subHeading font-medium w-full text-center lg:text-left">
             World-class Talent
           </h1>
@@ -101,7 +101,7 @@ const About = () => {
 
       <div className="w-full lg:h-[30rem] flex flex-col items-center justify-center lg:flex-row mx-[2.375rem] md:mx-0 md:rounded-2xl overflow-hidden">
         <div className="w-full h-[20rem] lg:h-full lg:w-[40%] bg-[url('/images/about/mobile/image-real-deal.jpg')] md:bg-[url('/images/about/tablet/image-real-deal.jpg')] lg:bg-[url('/images/about/desktop/image-real-deal.jpg')] bg-no-repeat bg-cover" />
-        <div className="flex flex-col gap-8 items-center justify-center lg:pr-[95px] p-[60px] lg:pl-8 bg-customLightPeach/30 lg:h-full md:h-[50%] h-auto w-full lg:w-[60%] bg-[url('/images/about/mobile/bg-pattern-hero-about-mobile.svg')] sm:bg-[url('/images/about/desktop/bg-pattern-hero-about-desktop.svg')] bg-no-repeat bg-cover bg-right">
+        <div className="flex flex-col gap-8 items-center justify-center lg:pr-[95px] p-[60px] lg:pl-8 bg-customLightPeach/30 lg:h-full md:h-[50%] h-auto w-full lg:w-[60%] bg-[url('/images/about/mobile/bg-pattern-hero-about-mobile.svg')] sm:bg-[url('/images/about/desktop/bg-pattern-hero-about-desktop.svg')] bg-no-repeat bg-contain bg-right">
           <h1 className="text-customPeach text-subHeading font-medium w-full text-center lg:text-left">
             The real deal
           </h1>
